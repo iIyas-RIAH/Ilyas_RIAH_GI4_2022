@@ -9,14 +9,5 @@ export const environment = {
     messagingSenderId: '262018218054',
     measurementId: 'G-JN38M1LFCR',
   },
-  production: true,
-  firebaseConfig : {
-    apiKey: "AIzaSyAtRKasVL6FkdGs_Xol15UtcciLHGy93ZM",
-    authDomain: "formation-103f3.firebaseapp.com",
-    projectId: "formation-103f3",
-    storageBucket: "formation-103f3.appspot.com",
-    messagingSenderId: "262018218054",
-    appId: "1:262018218054:web:28045772cb9529fa147247",
-    measurementId: "G-JN38M1LFCR"
-  }
+  production: false
 };
