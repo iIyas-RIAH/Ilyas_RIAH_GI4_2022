@@ -1,5 +1,5 @@
 <ion-content [fullscreen]="true">
-  <h2>Liste des formations :</h2>
+  <h2>Mes formations :</h2>
   <table>
     <tr  *ngFor="let Formation of formations">
         <td class="FirstCol">
@@ -13,6 +13,6 @@
 </ion-content>
 
 <ion-footer class="footer">
-  <button class="MesFormationsBtn" (click)="mesFormations()">Mes Formations</button>
+  <button class="BackBtn" (click)="back()">Retour</button>
   <button class="DeconnBtn" (click)="logout()">Se Déconnecter</button>
 </ion-footer>

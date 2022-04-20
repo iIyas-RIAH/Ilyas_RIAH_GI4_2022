@@ -1,0 +1,33 @@
+<ion-content [fullscreen]="true">
+  <div class="header__logo">
+      <h1 class="header__navbar--logo-title">tech training</h1>
+      <h4 class="header__slogan-title">UNE EXPERIENCE UNIQUE</h4>
+  </div>
+
+  <div class="form" (Submit)="SignUp()">
+      <div class="form__title">Inscription</div>
+      <form class="form__inner" accept-charset="utf-8">
+          <div class="form__block">
+              <h4 class="form__label">Nom Complet</h4>
+              <input class="form__input" type="text" name="nom" [(ngModel)]="name" required>
+          </div>
+          <div class="form__block">
+              <h4 class="form__label">Email</h4>
+              <input class="form__input" type="text" name="email" [(ngModel)]="email" required>
+          </div>
+          <div class="form__block">
+              <h4 class="form__label">Mot de passe</h4>
+              <input class="form__input" type="password" name="passwd" [(ngModel)]="password" required>
+          </div>
+          <input type="submit" class="button" (click)="SignUp()" value="S'inscrire">
+      </form>
+   </div>
+</ion-content>
+
+
+<ion-footer>
+  <div class="footer" (click)="gotologin()">
+    Vous avais déja un compte? Connectez-vous
+  </div>
+</ion-footer>
+

@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar *ngIf="formation">
+    <ion-title>{{formation.NomFormation | uppercase}} Details:</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div *ngIf="formation" class="details">
+    <p>{{formation.description}}</p>
+    <h4>Periode de la formation : {{formation.PeriodeFormation}} mois</h4>
+    <h4>Prix : {{formation.Prix}} DH</h4>
+    <button type="button" (click)="onSubscription()">S'inscrire</button>
+</div>
+</ion-content>
